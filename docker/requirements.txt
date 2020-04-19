@@ -1,0 +1,4 @@
+pillow 
+beautifulsoup4 
+opencv-python 
+tensorflow-addons

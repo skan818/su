@@ -15,3 +15,5 @@ os.system("python train_NK.py \
 --weights ./checkpoints/yolov3.tf \
 --weights_num_classes 80 \
 --logs 1241_images")
+
+#

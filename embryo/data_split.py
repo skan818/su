@@ -5,7 +5,7 @@ import random
 random.seed(818)
 main_dir = "/data/embryo/random/"
 train_dir = "/data/embryo/tfrecords/train/"
-test_dir = "/data/embryo/tfrecords/test/"
+test_dir = "/data/embryo/tfrecords/test_991/"
 
 file_list = os.listdir(main_dir)
 
@@ -60,8 +60,8 @@ for image in images:
 print("Train images: ", len(train_lst))
 print("Test images: ", len(test_lst))
 
-for image in train_lst:
-    shutil.copy(main_dir + image , train_dir + image)
+# for image in train_lst:
+#     shutil.copy(main_dir + image , train_dir + image)
 for image in test_lst:
     shutil.copy(main_dir + image , test_dir + image)
 

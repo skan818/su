@@ -54,18 +54,19 @@ for file in train_id:
     for image in more_images:
         if embryo_id(image) == file:
             more_train_images.append(image)
-for image in more_images:
-    if image not in train_images:
-        test_images.append(image)
+for file in test_id:
+    for image in more_images:
+        if embryo_id(image) == file:
+            test_images.append(image)
 
 print("Train images: ", len(train_images))
 print("More train images: ", len(more_train_images))
 print("Test images: ", len(test_images))
 
-for image in train_images:
-    shutil.copy(random_dir + image, train_dir +image)
-for image in more_train_images:
-    shutil.copy(more_dir + image, train_dir + image)
+# for image in train_images:
+#     shutil.copy(random_dir + image, train_dir +image)
+# for image in more_train_images:
+#     shutil.copy(more_dir + image, train_dir + image)
 for image in test_images:
     shutil.copy(more_dir + image, test_dir + image)
 

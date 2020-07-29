@@ -10,7 +10,7 @@ os.system("python train_NK.py \
 --transfer darknet \
 --batch_size 32 \
 --size 608 \
---epochs 5000 \
+--epochs 1000 \
 --learning_rate 0.00003 \
 --weights ./checkpoints/yolov3.tf \
 --weights_num_classes 80 \

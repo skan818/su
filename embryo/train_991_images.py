@@ -14,4 +14,5 @@ os.system("python train_NK.py \
 --learning_rate 0.00003 \
 --weights ./checkpoints/yolov3.tf \
 --weights_num_classes 80 \
---logs 991_images")
+--logs 991_images \
+--checkpoint 991_images")

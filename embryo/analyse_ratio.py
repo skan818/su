@@ -7,4 +7,4 @@ os.system("python add_ratio.py \
 --useMish True \
 --tiny True \
 --num_classes 2 \
---output ratio_over_time")
+--output ratio_over_time_2540_hp")

@@ -24,7 +24,7 @@ flags.DEFINE_boolean('tiny', False, 'yolov3 or yolov3-tiny')
 flags.DEFINE_string('weights', './checkpoints/yolov3.tf',
                     'path to weights file')
 flags.DEFINE_string('classes', './data/coco.names', 'path to classes file')
-flags.DEFINE_string('logs', '', 'path to log directory')
+flags.DEFINE_string('logs','./log','path to log directory (TensorBoard)')
 flags.DEFINE_enum('mode', 'fit', ['fit', 'eager_fit', 'eager_tf'],
                   'fit: model.fit, '
                   'eager_fit: model.fit(run_eagerly=True), '
@@ -180,7 +180,7 @@ def main(_argv):
             EarlyStopping(patience=3, verbose=1),
             ModelCheckpoint('checkpoints/yolov3_train_{epoch}.tf',
                             verbose=1, save_weights_only=True),
-            TensorBoard(log_dir= FLAGS.logs)
+            TensorBoard(log_dir=FLAGS.logs)
         ]
 
         history = model.fit(train_dataset,

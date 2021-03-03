@@ -22,10 +22,9 @@ flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
 
 
 def main(_argv):
-    physical_devices = tf.config.experimental.list_physical_devices('CPU')
+    physical_devices = tf.config.experimental.list_physical_devices('GPU')
     for physical_device in physical_devices:
-        #tf.config.experimental.set_memory_growth(physical_device, True)
-        x=2
+        tf.config.experimental.set_memory_growth(physical_device, True)
 
     if FLAGS.tiny:
         yolo = YoloV3Tiny(classes=FLAGS.num_classes)

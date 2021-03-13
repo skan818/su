@@ -34,6 +34,8 @@ Three datasets were created using Mask-RCNN, which outperformed YOLOv3 in terms 
 * [Method 2](./embryo/method_2.py): Selecting an image at a fixed time point of 6800 minutes.
 * [Method 3](./embryo/method_3.py): Selecting the image when the embryo reaches maximum size (after 6800 minutes)
 
+\*Note that the dataset created by method 1 is equivalent to dataset 2 in the thesis text and vice versa.
+
 ## Image Classification
 Transfer learning was used to train an Inceptionv3 model to predict foetal heartbeat (FHB), embryo quality, inner cell mass (ICM) quality and trophectoderm (TE) quality. Embryo quality is represented as two letters from A~C which assesses ICM quality and TE quality in that order. Models were trained separately for the three datasets and four outcomes.
 * Predicting FHB
@@ -77,7 +79,3 @@ Transfer learning was used to train an Inceptionv3 model to predict foetal heart
     - [Training script](./embryo/final_second_grade_3.py)
     - [Final model](./data/embryo/method_3/grade/saved_model/second_grade/)
 
-## Note
-\*All mentions of Method 1 in this repository are equivalent to Method 2 in the thesis text
-
-\*All mentions of Method 2 in this repository are equivalent to Method 1 in the thesis text

@@ -11,12 +11,12 @@
 Made toy classification models classifying ships and bikes.
 
 [Python notebooks](./ships_and_bikes/) contain:
-* Initial training
-* Visualising the convolutions
-* Adding dropout
-* Hyper-parameter tuning
-* Data augmentation
-* Plotting ROC curves
+* [Initial training](./ships_and_bikes/initial-training.ipynb)
+* [Visualising the convolutions](./ships_and_bikes/visualising-the-convolutions.ipynb)
+* [Adding dropout](./ships_and_bikes/dropout.ipynb)
+* [Hyper-parameter tuning](./ships_and_bikes/hyper-parameter-tuning.ipynb)
+* [Data augmentation](./ships_and_bikes/data-augmentation.ipynb)
+* [Plotting ROC curves](./ships_and_bikes/plotting-the-roc-curve.ipynb)
 
 ## Object detection
 Two object detections models were trained to identify and localise embryos in time lapse images.
